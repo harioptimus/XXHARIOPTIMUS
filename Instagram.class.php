@@ -230,7 +230,7 @@ function login($username, $password)
 
     ## HEADER LOGIN ##
     $header = array(
-        'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+        'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
         'X-CSRFToken: '.$csrf,
         'Content-Type: application/x-www-form-urlencoded',
         'Cookie: rur=FTW; mid='.$mid.'; csrftoken='.$csrf.'',
@@ -275,7 +275,7 @@ function comment($id, $session, $text)
 {
     $url = 'https://www.instagram.com/web/comments/'.$id.'/add/';
     $header = array(
-        'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+        'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
         'X-CSRFToken: '.$session['csrftoken'],
         'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
     );
@@ -317,7 +317,7 @@ function like($id, $session)
     if (isset($id)) {
         $url = 'https://www.instagram.com/web/likes/'.$id.'/like/';
         $header = array(
-            'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+            'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
             'X-CSRFToken: '.$session['csrftoken'],
             'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
         );
@@ -338,7 +338,7 @@ function unlike($id, $session)
     if (isset($id)) {
         $url = 'https://www.instagram.com/web/likes/'.$id.'/unlike/';
         $header = array(
-            'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+            'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
             'X-CSRFToken: '.$session['csrftoken'],
             'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
         );
@@ -361,7 +361,7 @@ function unfollow($username, $session)
         $id = $profile['id'];
         $url = 'https://www.instagram.com/web/friendships/'.$id.'/unfollow/';
         $header = array(
-            'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+            'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
             'X-CSRFToken: '.$session['csrftoken'],
             'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
         );
@@ -385,7 +385,7 @@ function follow($username, $session)
         $id = $profile['id'];
         $url = 'https://www.instagram.com/web/friendships/'.$id.'/follow/';
         $header = array(
-            'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+            'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
             'X-CSRFToken: '.$session['csrftoken'],
             'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
         );
@@ -462,7 +462,7 @@ function followById($id, $session)
 
         $url = 'https://www.instagram.com/web/friendships/'.$id.'/follow/';
         $header = array(
-            'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+            'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
             'X-CSRFToken: '.$session['csrftoken'],
             'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
         );
@@ -512,7 +512,7 @@ function block($username, $session)
         $id = $profile['id'];
         $url = 'https://www.instagram.com/web/friendships/'.$id.'/block/';
         $header = array(
-            'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+            'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
             'X-CSRFToken: '.$session['csrftoken'],
             'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
         );
@@ -534,7 +534,7 @@ function unblock($username, $session)
         $id = $profile['id'];
         $url = 'https://www.instagram.com/web/friendships/'.$id.'/unblock/';
         $header = array(
-            'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+            'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
             'X-CSRFToken: '.$session['csrftoken'],
             'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
         );
@@ -554,7 +554,7 @@ function deletePost($id, $session)
     $data = array();
     $url = 'https://www.instagram.com/create/'.$id.'/delete/';
     $header = array(
-        'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+        'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
         'X-CSRFToken: '.$session['csrftoken'],
         'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
     );
@@ -899,7 +899,7 @@ function activity($session)
 {
     $url = 'https://www.instagram.com/accounts/activity/';
     $header = array(
-        'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+        'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
         'X-CSRFToken: '.$session['csrftoken'],
         'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
     );
@@ -922,7 +922,7 @@ function getHome($session)
 {
     $url = 'https://www.instagram.com/';
     $header = array(
-        'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+        'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
         'X-CSRFToken: '.$session['csrftoken'],
         'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
     );
@@ -946,7 +946,7 @@ function onetap($session)
 {
     $url = 'https://www.instagram.com/accounts/onetap/?next=%2F';
     $header = array(
-        'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+        'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
         'X-CSRFToken: '.$session['csrftoken'],
         'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
     );
@@ -966,7 +966,7 @@ function logout($session)
 {
     $url = 'https://www.instagram.com/accounts/logout/';
     $header = array(
-        'User-Agent: Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36',
+        'User-Agent: Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36',
         'X-CSRFToken: '.$session['csrftoken'],
         'Cookie: csrftoken='.$session['csrftoken'].'; sessionid='.$session['sessionid']
     );
