@@ -6,7 +6,7 @@ $ pkg upgrade && pkg update && pkg install git php
 $ git clone https://github.com/harioptimus/XXHARIOPTIMUS.git
 
 
-$ cd INSTAGRAM-FEED-LIKER-v3
+$ cd XXHARIOPTIMUS
 
 $ php index.php
 
